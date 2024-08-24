@@ -4,7 +4,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 
 const app = express();
-const puerto = 5000;
+const puerto = process.env.PORT || 5000;
 
 //llamamos a la función
 conectarBD();
