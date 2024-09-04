@@ -17,12 +17,12 @@ function mostrarData() {
         <td> ${element.telefono}</td>
         <td> ${element.direccion}</td>
         <td>
-          <button class="btn btn-outline-warning" type="button"                 
+          <button class="btn btn-warning" type="button"                 
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                   onclick="cargarDatosEnModal('${element._id}')"><i class="bi bi-gear"></i> Editar
           </button>
-          <button class="btn btn-outline-danger" 
+          <button class="btn btn-danger" 
                   onclick="eliminarCliente('${element._id}')"><i class="bi bi-person-x"></i> Eliminar
           </button>
         </td>
@@ -92,7 +92,7 @@ function agregarCliente() {
   };
 
   let request = sendRequest("clientes", "POST", data);
-  request.onload = function () {
+  request.onload = function () { 
     mostrarData();
   };
 }
@@ -116,8 +116,6 @@ function editarCliente(id) {
     direccion: direccion,
   };
 
-  //console.log(data)
-  /* event.preventDefault(); */
   let request = sendRequest("clientes/" + id, "PUT", data);
   request.onload = function () {
     mostrarData();
