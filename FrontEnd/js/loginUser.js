@@ -1,3 +1,4 @@
+
 function loginUser(event) {
   event.preventDefault(); // Previene la recarga de la página al enviar el formulario
 
@@ -9,7 +10,6 @@ function loginUser(event) {
     password: password,
   };
 
-  console.log(data)
 
   try {
     let res = sendRequest("users/login", "POST", data);
@@ -28,6 +28,13 @@ function loginUser(event) {
   }
 }
 
+
+/**
+ * Función para cerrar la sesión del usuario enviando una petición POST al servidor con el endpoint "logout". 
+ * * Elimina los datos del usuario de localStorage, borra la cookie de token, y redirige a la página de índice al cerrar la sesión con éxito. 
+ * * Si la petición falla, registra la respuesta. 
+ * * Maneja los errores que puedan ocurrir durante el proceso de cierre de sesión.
+ */
 function logoutUser() {
   try {
     let res = sendRequest("logout", "POST", {});
