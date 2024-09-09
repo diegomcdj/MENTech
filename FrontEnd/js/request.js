@@ -1,5 +1,5 @@
-const url = "https://mentech-7.onrender.com/api/";
-/* const url = "http://localhost:5000/api/"; */
+/* const url = "https://mentech-7.onrender.com/api/"; */
+const url = "http://localhost:5000/api/";
 
 
 function sendRequest(endPoint, method, data) {

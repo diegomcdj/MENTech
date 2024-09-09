@@ -23,6 +23,7 @@ app.listen(puerto, () => console.log("conectados desde el servidor", puerto));
 app.use("/api/clientes", require("../routers/clienteRutas"));
 app.use("/api/proveedores", require("../routers/proveedoresRutas"));
 app.use("/api/categorias", require("../routers/categoriasRutas"));
+app.use("/api/users", require("../routers/User.routes"));
 
 //middleware de autenticación
 app.use((req, res, next) => {
