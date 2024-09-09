@@ -27,232 +27,28 @@ body {
   width: 70%;
 }
 
-.hero{
-    font-size: 50px;
-    margin-bottom: 55px;
-    font-weight: bold;
+.hero {
+  font-size: 50px;
+  margin-bottom: 55px;
+  font-weight: bold;
 }
 
-.btn-primary{
-    background-color: #8114857d;
-    border: none;
+.btn-primary {
+  background-color: #8114857d;
+  border: none;
 }
 
-.btn-primary:hover{
-    background-color: #ca20cf7d;
+.btn-primary:hover {
+  background-color: #ca20cf7d;
 }
 
 .right {
   /* background-color: #E8EBF2; */
-  --y-0: 80%;
-  --c-0: #bdead4;
-  --x-0: 85%;
-  --y-1: 24%;
-  --c-1: #a3c2ff;
-  --x-1: 60%;
-  --x-2: 13%;
-  --c-2: #f84dff7d;
-  --y-2: 82%;
-  --x-3: 24%;
-  --y-3: 7%;
-  --c-3: #73e4e8;
-  background-color: hsla(358.0000000000001, 0%, 100%, 1);
-  background-image: radial-gradient(
-      circle at var(--x-0) var(--y-0),
-      var(--c-0) var(--s-start-0),
-      transparent var(--s-end-0)
-    ),
-    radial-gradient(
-      circle at var(--x-1) var(--y-1),
-      var(--c-1) var(--s-start-1),
-      transparent var(--s-end-1)
-    ),
-    radial-gradient(
-      circle at var(--x-2) var(--y-2),
-      var(--c-2) var(--s-start-2),
-      transparent var(--s-end-2)
-    ),
-    radial-gradient(
-      circle at var(--x-3) var(--y-3),
-      var(--c-3) var(--s-start-3),
-      transparent var(--s-end-3)
-    );
-  animation: hero-gradient-animation 10s linear infinite alternate;
-  background-blend-mode: normal, normal, normal, normal;
-
   width: 50%;
+  
 }
 
-@keyframes hero-gradient-animation {
-  0% {
-    --y-0: 80%;
-    --c-0: hsla(150.8823529411765, 52%, 83%, 1);
-    --x-0: 85%;
-    --s-start-0: 9%;
-    --s-end-0: 55%;
-    --y-1: 24%;
-    --s-start-1: 5%;
-    --s-end-1: 72%;
-    --c-1: hsla(219.99999999999997, 100%, 82%, 1);
-    --x-1: 60%;
-    --x-2: 13%;
-    --c-2: hsla(297.7941176470588, 100%, 65%, 0.49);
-    --s-start-2: 5%;
-    --s-end-2: 52%;
-    --y-2: 82%;
-    --s-start-3: 13%;
-    --s-end-3: 68%;
-    --x-3: 24%;
-    --y-3: 7%;
-    --c-3: hsla(182, 72%, 68%, 1);
-  }
-
-  100% {
-    --y-0: 94%;
-    --c-0: hsla(150.8823529411765, 52%, 83%, 1);
-    --x-0: 31%;
-    --s-start-0: 9%;
-    --s-end-0: 55%;
-    --y-1: 25%;
-    --s-start-1: 5%;
-    --s-end-1: 72%;
-    --c-1: hsla(220, 82%, 95%, 1);
-    --x-1: 2%;
-    --x-2: 98%;
-    --c-2: hsla(297.7941176470588, 100%, 65%, 0.49);
-    --s-start-2: 5%;
-    --s-end-2: 52%;
-    --y-2: 20%;
-    --s-start-3: 13%;
-    --s-end-3: 68%;
-    --x-3: 95%;
-    --y-3: 92%;
-    --c-3: hsla(182, 72%, 68%, 1);
-  }
-}
-
-@property --y-0 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 80%;
-}
-
-@property --c-0 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: hsla(150.8823529411765, 52%, 83%, 1);
-}
-
-@property --x-0 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 85%;
-}
-
-@property --s-start-0 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 9%;
-}
-
-@property --s-end-0 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 55%;
-}
-
-@property --y-1 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 24%;
-}
-
-@property --s-start-1 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 5%;
-}
-
-@property --s-end-1 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 72%;
-}
-
-@property --c-1 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: hsla(219.99999999999997, 100%, 82%, 1);
-}
-
-@property --x-1 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 60%;
-}
-
-@property --x-2 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 13%;
-}
-
-@property --c-2 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: hsla(297.7941176470588, 100%, 65%, 0.49);
-}
-
-@property --s-start-2 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 5%;
-}
-
-@property --s-end-2 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 52%;
-}
-
-@property --y-2 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 82%;
-}
-
-@property --s-start-3 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 13%;
-}
-
-@property --s-end-3 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 68%;
-}
-
-@property --x-3 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 24%;
-}
-
-@property --y-3 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 7%;
-}
-
-@property --c-3 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: hsla(182, 72%, 68%, 1);
-}
-
-
-.fon-cli{
+.fon-cli {
   --y-0: 80%;
   --c-0: #bdead4;
   --x-0: 85%;
@@ -289,31 +85,18 @@ body {
   animation: hero-gradient-animation 10s linear infinite alternate;
   background-blend-mode: normal, normal, normal, normal;
   background-attachment: fixed;
-
-
 }
 
-.btn-success{
-  background-color: #8114857d;
+.btn-success {
+  background-color: #1be22c7d;
   border: none;
 }
 
-.form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+
+
+.formi {
+  height: 550px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 }
-
-.card{
-  width: 50%;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-
-
