@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>API</title>
+  </head>
+  <body>
+    <main>
+      <section class="secPelis" id="API">
+        <div class="header">
+          <h1 class="populares">Peliculas populares</h1>
+          <form id="form">
+            <input
+              type="text"
+              id="search"
+              class="search"
+              placeholder="Search"
+            />
+          </form>
+        </div>
+        <div class="contenedorp" id="contenedor"></div>
+        <div class="paginacion">
+          <button id="btnAnterior">Anterior</button>
+          <button id="btnSiguiente">Siguiente</button>
+        </div>
+      </section>
+      <div id="button-up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <button class="switch" id="switch">
+        <span><i class="fas fa-sun"></i></span>
+        <span><i class="fas fa-moon"></i></span>
+      </button>
+    </main>
+    <script src="js/Api.js"></script>
+  </body>
+</html>

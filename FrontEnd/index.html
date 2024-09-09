@@ -4,25 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <!-- <link href="../FrontEnd/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <title>Factory</title>
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="containerm">
       <section class="left"></section>
       <section class="right">
         <main
-          class="container position-relative top-50 start-50 translate-middle"
+          class="container  position-relative top-50 start-50 translate-middle"
         >
           <div class="d-flex justify-content-center align-items-center">
-            <div class=" " style="width: 350px">
-              <div class="card-header">
+            <div class="formi " style="width: 450px">
+              <div class="card-header text-center">
                 <h1 class="hero">Shopmmerce</h1>
-                <h4>E-commerce para hacer la comprasión</h4>
               </div>
-              <form class="mt-4" id="loginForm" onsubmit="loginUser(event)">
+              <form class="mt-4 mx-2" id="loginForm" onsubmit="loginUser(event)">
                 <div class="card-body">
                   <div class="mb-3">
                     <label for="email" class="form-label"
@@ -39,7 +38,7 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <div class="pass">
+                    <div class="d-flex justify-content-between">
                       <label for="password" class="form-label"
                         >Contraseña</label
                       >
@@ -47,13 +46,13 @@
                     </div>
                     <input type="password" class="form-control" id="password" />
                   </div>
-                  <div class="register">
+                  <div class="mb-3 d-flex justify-content-between">
                     <p>No tienes una Cuenta ?</p>
                     <a href="#">Registrarme</a>
                   </div>
                 </div>
                 <div class="card-footer d-grid gap-2">
-                  <button type="submit" class="btn">
+                  <button type="submit" class="btn btn-success my-2">
                     Acceder
                   </button>
                 </div>
@@ -64,7 +63,7 @@
       </section>
     </div>
 
-    <script src="../FrontEnd/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/request.js"></script>
     <script src="js/loginUser.js"></script>
   </body>
